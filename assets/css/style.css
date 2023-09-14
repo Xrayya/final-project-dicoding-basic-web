@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main, footer {
+  padding: 0px 64px;
+}
+
+header {
+  display: inline;
+  position: fixed;
+  width: 100%;
+}
+
+.header-container {
+  height: 64px;
+  box-sizing: border-box;
+  padding: 8px 64px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  gap: 32px;
+}
+
+.header-container > a > img {
+  height: 100%
+}
+
+nav {
+  width: 100%;
+}
+
+nav > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+section {
+  padding: 64px 0px;
+}
