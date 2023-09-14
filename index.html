@@ -1,179 +1,242 @@
 <!doctype html>
 <html lang="id">
+  <head>
+    <title>About Neovim</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Azhary Munir Abdillah" />
+    <meta name="repository" content="Azhary Munir Abdillah" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>About Neovim</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="author" content="Azhary Munir Abdillah" />
-  <meta name="repository" content="Azhary Munir Abdillah" />
-  <link href="assets/css/style.css" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <a href="#jumbotron">Logo Neovim</a>
-    <nav>
+  <body>
+    <header>
+      <a href="#jumbotron">Logo Neovim</a>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#strength">Kelebihan</a></li>
+          <li><a href="#plugin">Plugin</a></li>
+          <li><a href="#gallery">Showcase</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="jumbotron">
+        <h1>Neovim</h1>
+        <h2>Editor teks berbasis Vim yang hiperekstensibel</h2>
+      </section>
+      <section id="about">
+        <h3>TENTANG</h3>
+        <h2>Neovim itu apa sih?</h2>
+        <article>
+          <h5><i>Simple, yet powerful text editor</i></h5>
+          <p>
+            Begitulah impresi banyak orang tentang Neovim. Neovim adalah sebuah
+            editor teks yang kuat dan cepat, serta dapat dikonfigurasi dengan
+            opsi yang hampir tak terbatas.Teks editor ini didesain untuk
+            mempermudah pengembangan perangkat lunak. Meskipun begitu, editor
+            teks ini juga dapat digunakan untuk melakukan pemroses teks lainnya
+            juga. Dengan Neovim, pengguna dapat mengedit kode dan teks dengan
+            cepat. Pengguna dapat mengatur cara penggunaan Neovim sesuai dengan
+            keinginannya mulai dari tampilan hingga pemetaan tombol, sangat
+            mungkin dilakukan. Alat ini menjadi sangat berguna untuk
+            meningkatkan produktivitas dalam penulisan kode. Neovim juga
+            memiliki komunitas yang besar di berbagai media sosial. Selain itu,
+            terdapat dokumentasi yang lengkap untuk semua kebutuhan. Banyak juga
+            <i>plug-in</i> yang disediakan pihak ketiga yang membuat pengalaman
+            menggunakan Neovim lebih berkesan.
+          </p>
+        </article>
+      </section>
+      <section id="strength">
+        <h3>KEUNGGULAN</h3>
+        <h2>Kerennya Neovim</h2>
+        <article>
+          <h5>Ekstensibilitas</h5>
+          <p>
+            Neovim sangat ekstensibel. Anda bisa menambahkan berbagai plugin dan
+            konfigurasi sesuai dengan kebutuhan Anda. Ini memungkinkan Anda
+            untuk membuat lingkungan pengeditan yang sesuai dengan tugas dan
+            preferensi Anda.
+          </p>
+        </article>
+        <article>
+          <h5>Modal Editing</h5>
+          <p>
+            Neovim menggunakan sistem modal yang kuat. Ini berarti Anda dapat
+            beralih antara mode pengeditan dan navigasi dengan mudah, yang
+            memungkinkan Anda untuk mengedit teks dengan cepat dan efisien tanpa
+            perlu menggunakan banyak tombol pintas.
+          </p>
+        </article>
+        <article>
+          <h5>Performa Tinggi</h5>
+          <p>
+            Neovim dirancang untuk memiliki kinerja yang cepat, bahkan untuk
+            berkas teks yang sangat besar. Ini membuatnya sangat cocok untuk
+            penggunaan dalam pengembangan perangkat lunak di mana Anda mungkin
+            perlu membuka dan mengedit berkas kode yang besar.
+          </p>
+        </article>
+        <article>
+          <h5>Komunitas dan Dukungan Luas</h5>
+          <p>
+            Neovim memiliki komunitas yang besar dan aktif, yang berarti Anda
+            dapat dengan mudah menemukan bantuan dan sumber daya pembelajaran
+            jika Anda mengalami masalah atau ingin belajar lebih lanjut.
+          </p>
+        </article>
+        <article>
+          <h5>Lintas Platform</h5>
+          <p>
+            Neovim tersedia untuk berbagai platform, termasuk Windows, macOS,
+            dan berbagai distribusi Linux. Ini memungkinkan Anda untuk konsisten
+            dalam penggunaan Neovim di berbagai sistem operasi.
+          </p>
+        </article>
+        <article>
+          <h5>Dukungan Bahasa dan Integrasi</h5>
+          <p>
+            Neovim mendukung banyak bahasa pemrograman dan menyediakan integrasi
+            dengan banyak alat pengembangan seperti Git, tmux, dan banyak
+            lainnya. Ini membuatnya menjadi pilihan yang kuat untuk pengembangan
+            perangkat lunak.
+          </p>
+        </article>
+        <article>
+          <h5>Open Source dan Aktif Dikembangkan</h5>
+          <p>
+            Neovim adalah perangkat lunak sumber terbuka yang aktif dikembangkan
+            oleh komunitas yang berdedikasi. Ini berarti selalu ada pembaruan
+            dan perbaikan yang terus-menerus.
+          </p>
+        </article>
+      </section>
+      <section id="plugin">
+        <h3>PLUGIN</h3>
+        <h2>Plugin Populer</h2>
+        <div class="plugins-grid">
+          <div class="plugin">
+            <a href="https://github.com/neovim/nvim-lspconfig"
+              >nvim-lspconfig</a
+            >
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/hrsh7th/nvim-cmp">nvim-cmp</a>
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/L3MON4D3/LuaSnip">Luasnip</a>
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/nvim-telescope/telescope.nvim"
+              >telescope.nvim</a
+            >
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a>
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/williamboman/mason.nvim">mason.nvim</a>
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/nvim-tree/nvim-tree.lua"
+              >nvim-tree.lua</a
+            >
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/nvim-treesitter/nvim-treesitter"
+              >nvim-treesitter</a
+            >
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/windwp/nvim-autopairs"
+              >nvim-autopairs</a
+            >
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/numToStr/Comment.nvim">Comment.nvim</a>
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/lewis6991/gitsigns.nvim"
+              >gitsigns.nvim</a
+            >
+          </div>
+          <div class="plugin">
+            <a href="https://github.com/akinsho/bufferline.nvim"
+              >bufferline.nvim</a
+            >
+          </div>
+        </div>
+      </section>
+      <section id="gallery">
+        <h3>GALERI</h3>
+        <h2>Showcase</h2>
+      </section>
+    </main>
+    <aside id="about-writer">
+      <h3>PROFILE</h3>
+      <h2>Kenalan, yuk!</h2>
+      <!-- foto -->
+      <!-- table biodata -->
+      <table>
+        <img src="" alt="foto-penulis" />
+        <tr>
+          <th>Nama</th>
+          <td>:</td>
+          <td>Azhary Munir Abdillah</td>
+        </tr>
+        <tr>
+          <th>Asal</th>
+          <td>:</td>
+          <td>Bondowoso, Jawa Timur, Indonesia</td>
+        </tr>
+        <tr>
+          <th>Domisili</th>
+          <td>:</td>
+          <td>Kota Malang, Jawa Timur, Indonesia</td>
+        </tr>
+        <tr>
+          <th>Pekerjaan</th>
+          <td>:</td>
+          <td>Mahasiswa (Universitas Brawijaya)</td>
+        </tr>
+        <tr>
+          <th>Hobi</th>
+          <td>:</td>
+          <td><i>Ngoding</i>, <i>Valoan</i>, <i>Ngayal</i></td>
+        </tr>
+      </table>
+      <div class="social-media">
+        <div class="account">
+          <a href="mailto:nur.alkhiyar@gmail.com">personal email</a>
+        </div>
+        <div class="account">
+          <a href="mailto:azharymunir@student.ub.ac.id">educational email</a>
+        </div>
+        <div class="account">
+          <a href="https://www.instagram.com/nur.al_azhr">instagram</a>
+        </div>
+        <div class="account">
+          <a href="https://www.linkedin.com/in/azhary-munir-abdillah-6a9754252/"
+            >linkedin</a
+          >
+        </div>
+        <div class="account">
+          <a href="https://github.com/Xrayya">github</a>
+        </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="link">
+        <h3>Tautan</h3>
       <ul>
         <li><a href="#about">Tentang</a></li>
         <li><a href="#strength">Kelebihan</a></li>
         <li><a href="#plugin">Plugin</a></li>
+        <li><a href="#gallery">Showcase</a></li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="jumbotron">
-      <h1>Neovim</h1>
-      <h2>Editor teks berbasis Vim yang hiperekstensibel</h2>
-    </section>
-    <section id="about">
-      <h3>TENTANG</h3>
-      <h2>Neovim itu apa sih?</h2>
-      <article>
-        <h5><i>Simple, yet powerful text editor</i></h5>
-        <p>
-          Begitulah impresi banyak orang tentang Neovim. Neovim adalah sebuah
-          editor teks yang kuat dan cepat, serta dapat dikonfigurasi dengan
-          opsi yang hampir tak terbatas.Teks editor ini didesain untuk
-          mempermudah pengembangan perangkat lunak. Meskipun begitu, editor
-          teks ini juga dapat digunakan untuk melakukan pemroses teks lainnya
-          juga. Dengan Neovim, pengguna dapat mengedit kode dan teks dengan
-          cepat. Pengguna dapat mengatur cara penggunaan Neovim sesuai dengan
-          keinginannya mulai dari tampilan hingga pemetaan tombol, sangat
-          mungkin dilakukan. Alat ini menjadi sangat berguna untuk
-          meningkatkan produktivitas dalam penulisan kode. Neovim juga
-          memiliki komunitas yang besar di berbagai media sosial. Selain itu,
-          terdapat dokumentasi yang lengkap untuk semua kebutuhan. Banyak juga
-          <i>plug-in</i> yang disediakan pihak ketiga yang membuat pengalaman
-          menggunakan Neovim lebih berkesan.
-        </p>
-      </article>
-    </section>
-    <section id="strength">
-      <h3>KEUNGGULAN</h3>
-      <h2>Kerennya Neovim</h2>
-      <article>
-        <h5>Ekstensibilitas</h5>
-        <p>
-          Neovim sangat ekstensibel. Anda bisa menambahkan berbagai plugin dan
-          konfigurasi sesuai dengan kebutuhan Anda. Ini memungkinkan Anda
-          untuk membuat lingkungan pengeditan yang sesuai dengan tugas dan
-          preferensi Anda.
-        </p>
-      </article>
-      <article>
-        <h5>Modal Editing</h5>
-        <p>
-          Neovim menggunakan sistem modal yang kuat. Ini berarti Anda dapat
-          beralih antara mode pengeditan dan navigasi dengan mudah, yang
-          memungkinkan Anda untuk mengedit teks dengan cepat dan efisien tanpa
-          perlu menggunakan banyak tombol pintas.
-        </p>
-      </article>
-      <article>
-        <h5>Performa Tinggi</h5>
-        <p>
-          Neovim dirancang untuk memiliki kinerja yang cepat, bahkan untuk
-          berkas teks yang sangat besar. Ini membuatnya sangat cocok untuk
-          penggunaan dalam pengembangan perangkat lunak di mana Anda mungkin
-          perlu membuka dan mengedit berkas kode yang besar.
-        </p>
-      </article>
-      <article>
-        <h5>Komunitas dan Dukungan Luas</h5>
-        <p>
-          Neovim memiliki komunitas yang besar dan aktif, yang berarti Anda
-          dapat dengan mudah menemukan bantuan dan sumber daya pembelajaran
-          jika Anda mengalami masalah atau ingin belajar lebih lanjut.
-        </p>
-      </article>
-      <article>
-        <h5>Lintas Platform</h5>
-        <p>
-          Neovim tersedia untuk berbagai platform, termasuk Windows, macOS,
-          dan berbagai distribusi Linux. Ini memungkinkan Anda untuk konsisten
-          dalam penggunaan Neovim di berbagai sistem operasi.
-        </p>
-      </article>
-      <article>
-        <h5>Dukungan Bahasa dan Integrasi</h5>
-        <p>
-          Neovim mendukung banyak bahasa pemrograman dan menyediakan integrasi
-          dengan banyak alat pengembangan seperti Git, tmux, dan banyak
-          lainnya. Ini membuatnya menjadi pilihan yang kuat untuk pengembangan
-          perangkat lunak.
-        </p>
-      </article>
-      <article>
-        <h5>Open Source dan Aktif Dikembangkan</h5>
-        <p>
-          Neovim adalah perangkat lunak sumber terbuka yang aktif dikembangkan
-          oleh komunitas yang berdedikasi. Ini berarti selalu ada pembaruan
-          dan perbaikan yang terus-menerus.
-        </p>
-      </article>
-    </section>
-    <section id="plugin">
-      <h3>PLUGIN</h3>
-      <h2>Plugin Populer</h2>
-    </section>
-    <section id="gallery">
-      <h3>GALERI</h3>
-      <h2>Showcase</h2>
-    </section>
-  </main>
-  <aside id="about-writer">
-    <h3>PROFILE</h3>
-    <h2>Kenalan, yuk!</h2>
-    <!-- foto -->
-    <!-- table biodata -->
-    <table>
-      <img src="" alt="foto-penulis" />
-      <tr>
-        <th>Nama</th>
-        <td>:</td>
-        <td>Azhary Munir Abdillah</td>
-      </tr>
-      <tr>
-        <th>Asal</th>
-        <td>:</td>
-        <td>Bondowoso, Jawa Timur, Indonesia</td>
-      </tr>
-      <tr>
-        <th>Domisili</th>
-        <td>:</td>
-        <td>Kota Malang, Jawa Timur, Indonesia</td>
-      </tr>
-      <tr>
-        <th>Pekerjaan</th>
-        <td>:</td>
-        <td>Mahasiswa (Universitas Brawijaya)</td>
-      </tr>
-      <tr>
-        <th>Hobi</th>
-        <td>:</td>
-        <td><i>Ngoding</i>, <i>Valoan</i>, <i>Ngayal</i></td>
-      </tr>
-    </table>
-    <div class="social-media">
-      <div class="account">
-        <a href="mailto:nur.alkhiyar@gmail.com">personal email</a>
       </div>
-      <div class="account">
-        <a href="mailto:azharymunir@student.ub.ac.id">educational email</a>
-      </div>
-      <div class="account">
-        <a href="https://www.instagram.com/nur.al_azhr">instagram</a>
-      </div>
-      <div class="account">
-        <a href="https://www.linkedin.com/in/azhary-munir-abdillah-6a9754252/">linkedin</a>
-      </div>
-      <div class="account">
-        <a href="https://github.com/Xrayya">github</a>
-      </div>
-    </div>
-  </aside>
-  <footer>Footer</footer>
-</body>
-
+    </footer>
+  </body>
 </html>
