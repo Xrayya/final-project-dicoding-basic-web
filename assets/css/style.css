@@ -4,20 +4,20 @@
 }
 
 html {
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
-main, footer {
+footer {
   padding: 0px 64px;
 }
 
 header {
   display: inline;
-  position: fixed;
   width: 100%;
 }
 
-.header-container {
+.navbar {
   height: 64px;
   box-sizing: border-box;
   padding: 8px 64px;
@@ -28,7 +28,7 @@ header {
 }
 
 .header-container > a > img {
-  height: 100%
+  height: 100%;
 }
 
 nav {
@@ -43,6 +43,49 @@ nav > ul {
   list-style: none;
 }
 
-section {
-  padding: 64px 0px;
+.card {
+  border: 2px solid aqua;
+  border-radius: 12px;
+}
+
+main {
+  padding: 0px 64px;
+  display: flex;
+  gap: 16px;
+}
+
+#content {
+  flex: 3;
+}
+
+#content > section {
+  padding: 64px 64px;
+}
+
+#content > section > h2 {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.25;
+}
+
+#content > section > h3 {
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+#strength, #gallery {
+  background-color: #cbd5e1;
+}
+
+aside {
+  flex: 1;
+  padding: 64px 16px;
+  height: fit-content;
 }
