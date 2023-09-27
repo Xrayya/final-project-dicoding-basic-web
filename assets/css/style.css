@@ -88,7 +88,26 @@ p {
   background-color: #cbd5e1;
 }
 
+.gallery-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.screenshot-wrapper {
+  flex-basis: 500px;
+  flex-grow: 1;
+  box-sizing: border-box;
+}
+
+.screenshot-wrapper > img {
+  width: 100%;
+}
+
 aside {
+  position: sticky;
+  top: 80px;
   flex: 1;
   padding: 64px 16px;
   height: fit-content;
