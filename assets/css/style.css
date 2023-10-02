@@ -137,10 +137,49 @@ p {
   flex-basis: 200px;
   flex-grow: 1;
   box-sizing: border-box;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
 }
+
+.plugin > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: 250ms ease-out;
+}
+
+.plugin > a:hover{
+  color: #488dcf;
+}
+
+.plugin > a > span {
+  position: relative;
+}
+
+.plugin > a > span::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  background-color: #488dcf;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 250ms ease-out;
+}
+
+.plugin > a:hover > span::after {
+  transform: scaleX(1);
+}
+
+.plugin > a > img {
+  display: none;
+}
+
+.plugin > a:hover > img {
+  display: inline;
+}
+
 .gallery-container {
   width: 100%;
   display: flex;
