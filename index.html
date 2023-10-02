@@ -16,17 +16,17 @@
   </head>
 
   <body>
-    <header>
+    <header id="top">
       <div class="navbar">
-        <a href="#jumbotron">
+        <a href="#top">
           <img src="assets/images/neovim-logo.svg" alt="Neovim Logo" />
         </a>
         <nav>
           <ul>
             <li><a href="#about">Tentang</a></li>
-            <li><a href="#strength">Kelebihan</a></li>
+            <li><a href="#strength">Keunggulan</a></li>
             <li><a href="#plugin">Plugin</a></li>
-            <li><a href="#gallery">Showcase</a></li>
+            <li><a href="#gallery">Galeri</a></li>
           </ul>
         </nav>
       </div>
@@ -36,7 +36,7 @@
       </section>
     </header>
     <main>
-      <div id="content">
+      <div id="content" class="card">
         <section id="about">
           <h3>TENTANG</h3>
           <h2>Neovim itu apa sih?</h2>
@@ -128,60 +128,126 @@
         <section id="plugin">
           <h3>PLUGIN</h3>
           <h2>Plugin Populer</h2>
-          <div class="plugins-grid">
+          <div class="plugins-container">
             <div class="plugin">
-              <a href="https://github.com/neovim/nvim-lspconfig">
-                nvim-lspconfig
-              </a>
+              <a href="https://github.com/neovim/nvim-lspconfig" target="_blank"
+                >nvim-lspconfig</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/hrsh7th/nvim-cmp">nvim-cmp</a>
+              <a href="https://github.com/hrsh7th/nvim-cmp" target="_blank"
+                >nvim-cmp</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/L3MON4D3/LuaSnip">Luasnip</a>
+              <a href="https://github.com/L3MON4D3/LuaSnip" target="_blank"
+                >Luasnip</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/nvim-telescope/telescope.nvim">
-                telescope.nvim
-              </a>
+              <a
+                href="https://github.com/nvim-telescope/telescope.nvim"
+                target="_blank"
+                >telescope.nvim</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/folke/lazy.nvim">lazy.nvim</a>
+              <a href="https://github.com/folke/lazy.nvim" target="_blank"
+                >lazy.nvim</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/williamboman/mason.nvim"
+              <a
+                href="https://github.com/williamboman/mason.nvim"
+                target="_blank"
                 >mason.nvim</a
               >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/nvim-tree/nvim-tree.lua">
-                nvim-tree.lua
-              </a>
+              <a
+                href="https://github.com/nvim-tree/nvim-tree.lua"
+                target="_blank"
+                >nvim-tree.lua</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/nvim-treesitter/nvim-treesitter">
-                nvim-treesitter
-              </a>
+              <a
+                href="https://github.com/nvim-treesitter/nvim-treesitter"
+                target="_blank"
+                >nvim-treesitter</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/windwp/nvim-autopairs">
-                nvim-autopairs
-              </a>
+              <a href="https://github.com/windwp/nvim-autopairs" target="_blank"
+                >nvim-autopairs</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/numToStr/Comment.nvim"
+              <a href="https://github.com/numToStr/Comment.nvim" target="_blank"
                 >Comment.nvim</a
               >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/lewis6991/gitsigns.nvim">
-                gitsigns.nvim
-              </a>
+              <a
+                href="https://github.com/lewis6991/gitsigns.nvim"
+                target="_blank"
+                >gitsigns.nvim</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
             <div class="plugin">
-              <a href="https://github.com/akinsho/bufferline.nvim">
-                bufferline.nvim
-              </a>
+              <a
+                href="https://github.com/akinsho/bufferline.nvim"
+                target="_blank"
+                >bufferline.nvim</a
+              >
+              <p class="description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, ducimus?
+              </p>
             </div>
           </div>
         </section>
@@ -247,66 +313,64 @@
         </section>
       </div>
       <aside id="about-writer" class="card">
-        <h3>PROFILE</h3>
-        <h2>Kenalan, yuk!</h2>
-        <img src="" alt="foto-penulis" />
+        <h2>MY PROFILE</h2>
+        <img
+          class="profile-picture"
+          src="assets/images/profile.jpg"
+          alt="foto-penulis"
+        />
         <h4>Azhary Munir Abdillah</h4>
-        <p>Kota Malang, Jawa Timur, Indonesia</p>
+        <p class="location">Kota Malang, Jawa Timur, Indonesia</p>
         <hr />
-        <p>
+        <p class="description">
           <i
-            >Anak Sistem Informasi UB yang doyan ngoding, valoan, dan ngayal
+            >Anak Sistem Informasi yang doyan ngoding, valoan, dan ngayal
             tipis-tipis</i
           >
         </p>
-        <!-- foto -->
-        <!-- table biodata -->
-        <!-- <table> -->
-        <!--   <tr> -->
-        <!--     <th>Nama</th> -->
-        <!--     <td>:</td> -->
-        <!--     <td>Azhary Munir Abdillah</td> -->
-        <!--   </tr> -->
-        <!--   <tr> -->
-        <!--     <th>Asal</th> -->
-        <!--     <td>:</td> -->
-        <!--     <td>Bondowoso, Jawa Timur, Indonesia</td> -->
-        <!--   </tr> -->
-        <!--   <tr> -->
-        <!--     <th>Domisili</th> -->
-        <!--     <td>:</td> -->
-        <!--     <td>Kota Malang, Jawa Timur, Indonesia</td> -->
-        <!--   </tr> -->
-        <!--   <tr> -->
-        <!--     <th>Pekerjaan</th> -->
-        <!--     <td>:</td> -->
-        <!--     <td>Mahasiswa (Universitas Brawijaya)</td> -->
-        <!--   </tr> -->
-        <!--   <tr> -->
-        <!--     <th>Hobi</th> -->
-        <!--     <td>:</td> -->
-        <!--     <td><i>Ngoding</i>, <i>Valoan</i>, <i>Ngayal</i></td> -->
-        <!--   </tr> -->
-        <!-- </table> -->
+        <h3>Kenalan, yuk!</h3>
         <div class="social-media">
           <div class="account">
-            <a href="mailto:nur.alkhiyar@gmail.com">personal email</a>
+            <a href="mailto:nur.alkhiyar@gmail.com" target="_blank"
+              ><img src="assets/images/gmail.svg" alt="email" />
+              <div class="label">
+                <span class="expandable">personal email</span>
+              </div>
+            </a>
           </div>
           <div class="account">
-            <a href="mailto:azharymunir@student.ub.ac.id">educational email</a>
+            <a href="mailto:azharymunir@student.ub.ac.id" target="_blank"
+              ><img src="assets/images/gmail.svg" alt="email-ed" />
+              <div class="label">
+                <span class="expandable">educational email</span>
+              </div>
+            </a>
           </div>
           <div class="account">
-            <a href="https://www.instagram.com/nur.al_azhr">instagram</a>
+            <a href="https://www.instagram.com/nur.al_azhr" target="_blank"
+              ><img src="assets/images/instagram.svg" alt="instagram" />
+              <div class="label">
+                <span class="expandable">instagram</span>
+              </div>
+            </a>
           </div>
           <div class="account">
             <a
               href="https://www.linkedin.com/in/azhary-munir-abdillah-6a9754252/"
-            >
-              linkedin
+              target="_blank"
+              ><img src="assets/images/linkedin.svg" alt="linkedin" />
+              <div class="label">
+                <span class="expandable">linkedin</span>
+              </div>
             </a>
           </div>
           <div class="account">
-            <a href="https://github.com/Xrayya">github</a>
+            <a href="https://github.com/Xrayya" target="_blank"
+              ><img src="assets/images/github.svg" alt="github" />
+              <div class="label">
+                <span class="expandable">github</span>
+              </div>
+            </a>
           </div>
         </div>
       </aside>
@@ -324,14 +388,22 @@
       <div class="learn-more">
         <h3>Pelajari lebih Lanjut</h3>
         <ul>
-          <li><a href="https://neovim.io/">Neovim.io</a></li>
           <li>
-            <a href="https://github.com/neovim/neovim">
+            <a href="https://neovim.io/" target="_blank"
+              >Neovim.io
+              <img class="external-link" src="assets/images/link.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://github.com/neovim/neovim" target="_blank">
               Repository github resmi
             </a>
           </li>
           <li>
-            <a href="https://github.com/rockerBOO/awesome-neovim">
+            <a
+              href="https://github.com/rockerBOO/awesome-neovim"
+              target="_blank"
+            >
               <i>Awesome Neovim Plugins</i>
             </a>
           </li>
