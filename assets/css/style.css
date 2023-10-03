@@ -74,6 +74,30 @@ nav a:hover::after {
 
 section#jumbotron {
   height: calc(100vh - 64px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#jumbotron > h1 {
+  font-size: 6rem;
+  line-height: 1;
+}
+
+#jumbotron > h2 {
+  font-size: 1.875rem;
+  line-height: 2.25;
+  color: #90c46c;
+}
+
+#jumbotron > img {
+  position: absolute;
+  width: 200%;
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .card {
