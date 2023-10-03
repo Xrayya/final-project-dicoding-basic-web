@@ -419,3 +419,40 @@ footer h3 {
   color: #488dcf;
 }
 
+@media screen and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  #content,
+  #about-writer {
+    flex: 1;
+  }
+
+  #about-writer {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 8px 32px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  main {
+    padding: 0px;
+    margin: 32px 0px;
+  }
+
+  #content > section {
+    padding: 32px 32px;
+  }
+
+  footer {
+    padding: 32px 32px;
+  }
+}
