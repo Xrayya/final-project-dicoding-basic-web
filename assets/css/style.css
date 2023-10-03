@@ -21,6 +21,7 @@ header {
   padding: 8px 64px;
   position: sticky;
   top: 0;
+  z-index: 99;
   display: flex;
   gap: 32px;
   background-color: #ffffffc0;
@@ -50,6 +51,10 @@ nav a {
   /* border: 2px solid aqua; */
 }
 
+nav a:hover {
+  color: #90c46c;
+}
+
 nav a::after {
   content: "";
   width: 100%;
@@ -65,10 +70,6 @@ nav a::after {
 
 nav a:hover::after {
   transform: scaleX(1);
-}
-
-nav a:hover {
-  color: #90c46c;
 }
 
 section#jumbotron {
@@ -115,6 +116,7 @@ main {
 
 p {
   text-align: justify;
+  color: #475569;
 }
 
 #about,
@@ -136,22 +138,60 @@ p {
 .plugin {
   flex-basis: 200px;
   flex-grow: 1;
+  padding: 8px;
   box-sizing: border-box;
+  border-radius: 4px;
+  /* border: 2px solid grey; */
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  overflow: hidden;
+  position: relative;
+  /* pointer-events: none; */
+  transition: 200ms ease-out;
+}
+
+.plugin:hover {
+  background-color: #e2e8f0;
+  box-shadow:
+    0 4px 6px -1px rgb(0 0 0 / 0.1),
+    0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.plugin::before {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: #90c46c;
+  transition: 200ms ease-out;
+}
+
+.plugin:hover::before {
+  background-color: #488dcf;
 }
 
 .plugin > a {
-  font-weight: bold;
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
   text-decoration: none;
   color: black;
-  transition: 250ms ease-out;
+  transition: 200ms ease-out;
+  /* pointer-events: auto; */
+  /* border: solid 2px grey; */
 }
 
-.plugin > a:hover{
+.plugin > a:hover {
   color: #488dcf;
 }
 
 .plugin > a > span {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: bold;
   position: relative;
+  /* border: solid 2px aqua; */
 }
 
 .plugin > a > span::after {
@@ -165,7 +205,7 @@ p {
   border-radius: 2px;
   transform: scaleX(0);
   transform-origin: left;
-  transition: 250ms ease-out;
+  transition: 200ms ease-out;
 }
 
 .plugin > a:hover > span::after {
@@ -178,6 +218,11 @@ p {
 
 .plugin > a:hover > img {
   display: inline;
+}
+
+.plugin > p {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
 }
 
 .gallery-container {
@@ -274,7 +319,6 @@ aside {
   height: 1.25rem;
 }
 
-
 footer {
   padding: 64px 64px;
   display: flex;
@@ -293,6 +337,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: white;
+  transition: 200ms ease-out;
 }
 
 footer h3 {
@@ -302,4 +347,12 @@ footer h3 {
 
 .external-link {
   height: 0.75rem;
+}
+
+.link a:hover {
+  color: #90c46c;
+}
+
+.learn-more a:hover {
+  color: #488dcf;
 }
