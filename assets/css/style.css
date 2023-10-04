@@ -444,7 +444,26 @@ footer h3 {
 
 @media screen and (max-width: 1024px) {
   nav {
-    display: none;
+    position: fixed;
+    right: -75vh;
+    top: 0;
+    padding-top: 64px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    display: block;
+    width: fit-content;
+    height: calc(100vh - 64px);
+    background-color: #ffffffc0;
+    backdrop-filter: blur(4px);
+    transition: 200ms linear;
+  }
+
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+    padding: 32px 64px;
   }
 
   .hamburger-button {
@@ -492,25 +511,7 @@ footer h3 {
   }
 
   .nav-active {
-    position: fixed;
     right: 0;
-    top: 0px;
-    padding-top: 64px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    display: block;
-    width: fit-content;
-    height: calc(100vh - 64px);
-    background-color: #ffffffc0;
-    backdrop-filter: blur(4px);
-  }
-
-  .nav-active > ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 16px;
-    padding: 32px 64px;
   }
 
   main {
