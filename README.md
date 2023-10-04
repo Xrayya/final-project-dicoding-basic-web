@@ -5,9 +5,8 @@ note : the content in this project is written in Bahasa<br>
 
 ## Content
 - Jumbotron
-- What is Neovim?
-- Advantage
+- About
+- Stength
 - Plugins
-    - Popular Plugins
-- About Writer
+- Gallery
 - Footer
