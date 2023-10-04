@@ -21,7 +21,7 @@
         <a href="#top">
           <img src="assets/images/neovim-logo.svg" alt="Neovim Logo" />
         </a>
-        <nav>
+        <nav class="nav-active">
           <ul>
             <li><a href="#about">Tentang</a></li>
             <li><a href="#strength">Keunggulan</a></li>
@@ -29,11 +29,19 @@
             <li><a href="#gallery">Galeri</a></li>
           </ul>
         </nav>
+        <button type="button" class="hamburger-button hamburger-active">
+          <span class="hamburger-line"></span>
+          <span class="x-wrapper">
+            <span class="x-line"></span>
+            <span class="x-line"></span>
+          </span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
       <section id="jumbotron">
         <h1>Neovim</h1>
         <h2>Editor teks berbasis Vim yang hiperekstensibel</h2>
-        <img src="assets/images/jumbortrol-bg.svg" alt="">
+        <img src="assets/images/jumbortrol-bg.svg" alt="" />
       </section>
     </header>
     <main>
@@ -136,8 +144,7 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                Kumpulan kofigurasi untuk LSP yang dibangun oleh komunitas
               </p>
             </div>
             <div class="plugin">
@@ -146,8 +153,7 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                <i>Autocompletion plugin</i>
               </p>
             </div>
             <div class="plugin">
@@ -156,8 +162,8 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                Plugin yang menyediakan fungsionalitas untuk mengelola dan
+                mengontrol <i>snippet</i> dalam melakukan pemrograman
               </p>
             </div>
             <div class="plugin">
@@ -168,8 +174,8 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                <i>Fuzzy-finder</i> yang terintegrasi dengan fitur bawaan neovim
+                dan berbagai plugin lainnya
               </p>
             </div>
             <div class="plugin">
@@ -178,8 +184,8 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                <i>Plugin manager</i> yang mengoptimasi
+                <i>lazy-loading</i> untuk menaikkan performa
               </p>
             </div>
             <div class="plugin">
@@ -190,8 +196,10 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                <i>Dependency manager</i> yang membantu pemasangan dan
+                pengelolaan berbagai <i>package</i>, meliputi
+                <i>language server</i>, <i>formatter</i>, <i>linter</i>, dan
+                <i>Debugger</i>
               </p>
             </div>
             <div class="plugin">
@@ -202,8 +210,7 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                <i>file explorer</i>
               </p>
             </div>
             <div class="plugin">
@@ -213,10 +220,7 @@
                 ><span>nvim-treesitter</span>
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
-              <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
-              </p>
+              <p class="description"><i>treesitter engine</i> untuk Neovim</p>
             </div>
             <div class="plugin">
               <a href="https://github.com/windwp/nvim-autopairs" target="_blank"
@@ -224,8 +228,8 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                Secara otomatis melengkapi kurung tertutup dari pasangan apa pun
+                seperti {},(), []
               </p>
             </div>
             <div class="plugin">
@@ -234,8 +238,7 @@
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
               <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
+                Plugin untuk mempermudah penulisan komentar dalam kode
               </p>
             </div>
             <div class="plugin">
@@ -245,10 +248,7 @@
                 ><span>gitsigns.nvim</span>
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
-              <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
-              </p>
+              <p class="description"><i>Git decorator</i> untuk Neovim</p>
             </div>
             <div class="plugin">
               <a
@@ -257,10 +257,7 @@
                 ><span>bufferline.nvim</span>
                 <img class="external-link" src="assets/images/link.svg" alt=""
               /></a>
-              <p class="description">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, ducimus?
-              </p>
+              <p class="description">Dekorator untuk tab dan buffer</p>
             </div>
           </div>
         </section>
@@ -312,65 +309,68 @@
       </div>
       <aside id="about-writer" class="card">
         <div class="profile">
-        <h2>MY PROFILE</h2>
-        <img
-          class="profile-picture"
-          src="assets/images/profile.jpg"
-          alt="foto-penulis"
-        />
-        <h3>Azhary Munir Abdillah</h3>
-        <p class="location"><img src="assets/images/location pin.svg" alt=""> Kota Malang, Jawa Timur, Indonesia</p>
-        <hr />
-        <p class="description">
-          <i
-            >Anak Sistem Informasi yang doyan ngoding, valoan, dan ngayal
-            tipis-tipis</i
-          >
-        </p>
-        <div class="social-media">
-          <div class="account">
-            <a href="mailto:nur.alkhiyar@gmail.com" target="_blank"
-              ><img src="assets/images/gmail.svg" alt="email" />
-              <div class="label">
-                <span class="expandable">personal email</span>
-              </div>
-            </a>
+          <h2>MY PROFILE</h2>
+          <img
+            class="profile-picture"
+            src="assets/images/profile.jpg"
+            alt="foto-penulis"
+          />
+          <h3>Azhary Munir Abdillah</h3>
+          <p class="location">
+            <img src="assets/images/location pin.svg" alt="" /> Kota Malang,
+            Jawa Timur, Indonesia
+          </p>
+          <hr />
+          <p class="description">
+            <i
+              >Anak Sistem Informasi yang doyan ngoding, valoan, dan ngayal
+              tipis-tipis</i
+            >
+          </p>
+          <div class="social-media">
+            <div class="account">
+              <a href="mailto:nur.alkhiyar@gmail.com" target="_blank"
+                ><img src="assets/images/gmail.svg" alt="email" />
+                <div class="label">
+                  <span class="expandable">personal email</span>
+                </div>
+              </a>
+            </div>
+            <div class="account">
+              <a href="mailto:azharymunir@student.ub.ac.id" target="_blank"
+                ><img src="assets/images/gmail.svg" alt="email-ed" />
+                <div class="label">
+                  <span class="expandable">educational email</span>
+                </div>
+              </a>
+            </div>
+            <div class="account">
+              <a href="https://www.instagram.com/nur.al_azhr" target="_blank"
+                ><img src="assets/images/instagram.svg" alt="instagram" />
+                <div class="label">
+                  <span class="expandable">instagram</span>
+                </div>
+              </a>
+            </div>
+            <div class="account">
+              <a
+                href="https://www.linkedin.com/in/azhary-munir-abdillah-6a9754252/"
+                target="_blank"
+                ><img src="assets/images/linkedin.svg" alt="linkedin" />
+                <div class="label">
+                  <span class="expandable">linkedin</span>
+                </div>
+              </a>
+            </div>
+            <div class="account">
+              <a href="https://github.com/Xrayya" target="_blank"
+                ><img src="assets/images/github.svg" alt="github" />
+                <div class="label">
+                  <span class="expandable">github</span>
+                </div>
+              </a>
+            </div>
           </div>
-          <div class="account">
-            <a href="mailto:azharymunir@student.ub.ac.id" target="_blank"
-              ><img src="assets/images/gmail.svg" alt="email-ed" />
-              <div class="label">
-                <span class="expandable">educational email</span>
-              </div>
-            </a>
-          </div>
-          <div class="account">
-            <a href="https://www.instagram.com/nur.al_azhr" target="_blank"
-              ><img src="assets/images/instagram.svg" alt="instagram" />
-              <div class="label">
-                <span class="expandable">instagram</span>
-              </div>
-            </a>
-          </div>
-          <div class="account">
-            <a
-              href="https://www.linkedin.com/in/azhary-munir-abdillah-6a9754252/"
-              target="_blank"
-              ><img src="assets/images/linkedin.svg" alt="linkedin" />
-              <div class="label">
-                <span class="expandable">linkedin</span>
-              </div>
-            </a>
-          </div>
-          <div class="account">
-            <a href="https://github.com/Xrayya" target="_blank"
-              ><img src="assets/images/github.svg" alt="github" />
-              <div class="label">
-                <span class="expandable">github</span>
-              </div>
-            </a>
-          </div>
-        </div>
         </div>
       </aside>
     </main>
@@ -405,5 +405,6 @@
         </ul>
       </div>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
